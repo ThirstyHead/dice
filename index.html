@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice</title>
+
+    <style media="screen">
+      .pass{
+        color: green;
+      }
+
+      .fail{
+        background-color: red;
+      }
+    </style>
+
+    <script defer type="module">
+      import {results} from './dice-test.mjs';
+      let htmlResults = document.querySelector('#results');
+
+      results.forEach( (result) => {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(result));
+        if(result.startsWith("[true]")){
+          li.classList.add("pass");
+        }else{
+          li.classList.add("fail");
+        }
+        htmlResults.appendChild(li);
+      });
+    </script>
+
+  </head>
+  <body>
+    <h1>Dice tests</h1>
+    <ul id="results">
+
+    </ul>
+  </body>
+</html>
