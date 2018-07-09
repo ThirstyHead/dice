@@ -1,2 +1,2 @@
-# dice
-Dice
+# Dice
+Modeling dice in JavaScript
