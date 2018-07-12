@@ -1,6 +1,8 @@
 'use strict';
 import {Dice} from './dice.mjs';
 
+export {test, tests};
+
 let tests = new Map();
 tests.set("it should have a default number of sides", () => {
   const d = new Dice();
@@ -23,10 +25,15 @@ tests.set("roll() should be between 1 and dice.sides", () => {
   });
 });
 
-let results = [];
-tests.forEach( (test, name) => {
-  results.push(`[${test()}] ${name}`);
-})
+// TODO test for float
 
-console.log(results);
-export {results};
+// TODO test for non-number
+
+
+function test(){
+  let results = [];
+  tests.forEach( (test, name) => {
+    results.push(`[${test()}] ${name}`);
+  });
+  return results;
+}

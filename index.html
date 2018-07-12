@@ -15,7 +15,8 @@
     </style>
 
     <script defer type="module">
-      import {results} from './dice-test.mjs';
+      import {test} from './dice-test.mjs';
+      const results = test();
       let htmlResults = document.querySelector('#results');
 
       results.forEach( (result) => {
@@ -33,8 +34,6 @@
   </head>
   <body>
     <h1>Dice tests</h1>
-    <ul id="results">
-
-    </ul>
+    <ul id="results"></ul>
   </body>
 </html>
