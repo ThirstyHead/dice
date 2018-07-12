@@ -1,7 +1,7 @@
 {
   "name": "dice",
   "version": "0.1.0",
-  "description": "Dice written in JavaScript",
+  "description": "Dice module written in JavaScript",
   "main": "dice.js",
   "scripts": {
     "test": "node --experimental-modules test.mjs"
