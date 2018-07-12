@@ -14,7 +14,7 @@ tests.set("it should allow you to set the number of sides", () => {
   return d.sides === 10;
 });
 
-tests.set("roll() should be between 1 and dice.sides", () => {
+tests.set("roll() should return a number between 1 and dice.sides", () => {
   const d = new Dice();
   let tmp = [];
   for(let i=0; i<100; i++) {
@@ -25,10 +25,10 @@ tests.set("roll() should be between 1 and dice.sides", () => {
   });
 });
 
-// TODO test for float
-
-// TODO test for non-number
-
+tests.set("dice.sides should be an integer", () => {
+  const d = new Dice(1.1);
+  return d.sides === 2;
+});
 
 function test(){
   let results = [];
