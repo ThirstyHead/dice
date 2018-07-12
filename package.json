@@ -1,0 +1,19 @@
+{
+  "name": "dice",
+  "version": "0.1.0",
+  "description": "Dice module written in JavaScript",
+  "main": "dice.js",
+  "scripts": {
+    "test": "node --experimental-modules test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThirstyHead/dice.git"
+  },
+  "author": "Scott Davis <scott@thirstyhead.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThirstyHead/dice/issues"
+  },
+  "homepage": "https://github.com/ThirstyHead/dice#readme"
+}
